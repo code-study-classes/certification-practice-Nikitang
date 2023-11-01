@@ -156,7 +156,7 @@ getDayOfWeek(365); // 2
 
 **Пример использования**
 ```javascript
-countSquares(6, 4, 2); // 4
+countSquares(6, 4, 2); // 4 
 countSquares(8, 5, 3); // 2
 countSquares(10, 10, 5); // 4
 ```
