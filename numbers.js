@@ -58,28 +58,31 @@ export const getFullHours = (second) => {
   return floor;
 };
 
-export const getDayOfWeek = () => {
-    let ost = 0
-    if (getDayOfWeek <= 365) {
+export const getDayOfWeek = (dayOfYear) => {
         if (getDayOfWeek % 7 === 0) {
-            ost = 0;
-        } else if (getDayOfWeek % 7 === 1) {
-            ost = 1;
-        } else if (getDayOfWeek % 7 === 2) {
-            ost = 2;
-        } else if (getDayOfWeek % 7 === 3) {
-            ost = 3; 
-        } else if (getDayOfWeek % 7 === 4) {
-            ost = 4;
-        } else if (getDayOfWeek % 7 === 5) {
-            ost = 5;
-        } else if (getDayOfWeek % 7 === 6) {
-            ost = 6;
-        } else if (getDayOfWeek % 7 === 7) {
-            ost = 7;
+            return 0;
+        } else if (dayOfYear % 7 === 1) {
+            return 1;
+        } else if (dayOfYear % 7 === 2) {
+            return 2;
+        } else if (dayOfYear % 7 === 3) {
+            return 3; 
+        } else if (dayOfYear % 7 === 4) {
+            return 4;
+        } else if (dayOfYear % 7 === 5) {
+            return 5;
+        } else if (dayOfYear % 7 === 6) {
+            return 6;
+        } else if (dayOfYear % 7 === 7) {
+             return 7;
         }
-    }
-  return ost;
 };
   
+export const countSquares = (a, b, c) => {
+  const prem = a * b;
+  const kvadro = c * c;
+  const kvadro2 = Math.floor(kvadro);
+  const last = prem / kvadro2;
+  return last;
+};
 
