@@ -26,7 +26,9 @@ export const containsSubstring = (s, so) => {
 };
 
 
-export const countWordsWithSameLetters = (sentence) => {
-  const str = sentence.split(' ');
+export const countWordsWithSameLetters = (s, s1, s2) => {
+  for (let i = 0; i < sentence.length; i += 1) {
+    for (let j = 0; j )
+  }
   
 }
