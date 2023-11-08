@@ -16,15 +16,19 @@ export const combineStrings = (n1, n2, s1, s2) => {
 };
 
 export const containsSubstring = (s, so) => {
-  const str = s.match(so)
-  if (str) {
-    return true
+  for (let i = 0; i < s.length; i += 1) {
+    if (s[i] === so[i]) {
+      return true;
+    } else if (s[i] !== so[i]) {
+      return false;
+    }
   }
-  return false;
 };
 
 
-export const countWordsWithSameLetters = (sentence) => {
-  const str = sentence.split(' ');
+export const countWordsWithSameLetters = (s, s1, s2) => {
+  for (let i = 0; i < sentence.length; i += 1) {
+    for (let j = 0; j )
+  }
   
 }
